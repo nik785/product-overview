@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <title>demo nikhil project.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="no">THIS IS MY PERSONAL DESCRIPTION..</h1>
+    <section class="container">
+
+        <div class="small-img">
+            <img src="img/1.jpg" onclick="myfunction(this)" >
+            <img src="img/2.jpg" onclick="myfunction(this)" >
+            <img src="img/5.jpg" onclick="myfunction(this)">
+            <img src="img/4.jpg" onclick="myfunction(this)">
+            <img src="img/7.jpg" onclick="myfunction(this)">
+        </div>
+        <div class="big-img">
+            <img id="balo" src="img/1.jpg"  >
+        </div>
+        
+               
+    </section>
+    <section >
+        <div class="gogo">
+            <h2>This is <b>N<span>i</span>KH<span>i</span>L</b></h2>
+            <p>"Spread love everywhere you go. Let no one ever come to you without leaving happier." -Mother Teresa</p>
+            <button>Contact</button>
+        </div>
+        
+    </section>
+    <script>
+        function myfunction(smallImg)
+        {
+            var fullImg = document.getElementById("balo");
+            fullImg.src = smallImg.src;
+
+            
+        }
+    </script>
+    
+</body>
+</html>
